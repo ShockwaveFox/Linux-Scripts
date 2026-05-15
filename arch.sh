@@ -15,7 +15,7 @@ echo "Updating system"
 sudo pacman -Syu
 
 # prints message to screen
-echo "\n===========================================\n"
+printf "\n===========================================\n\n"
 
 # Prints message to screen
 echo "Installing Arch packages"
@@ -24,7 +24,7 @@ echo "Installing Arch packages"
 sudo pacman -S --needed "${arch_packages[@]}"
 
 # prints message to screen
-echo "\n===========================================\n"
+printf "\n===========================================\n\n"
 
 # Prints message to screen
 echo "Installing AUR packages"
@@ -33,7 +33,7 @@ echo "Installing AUR packages"
 yay -S --needed "${aur_packages[@]}"
 
 # prints message to screen
-echo "\n===========================================\n"
+printf "\n===========================================\n\n"
 
 # Prints message to screen
 echo "Installing Security packages"
@@ -41,7 +41,7 @@ echo "Installing Security packages"
 sudo pacman -S --needed "${security_packages[@]}"
 
 # prints message to screen
-echo "\n===========================================\n"
+printf "\n===========================================\n\n"
 
 # Prints message to screen
 echo "Enabling Security packages"
@@ -52,7 +52,7 @@ sudo systemctl enable --now apparmor
 sudo systemctl enable --now clamav-freshclam
 
 # prints message to screen
-echo "\n===========================================\n"
+printf "\n===========================================\n\n"
 
 # Prints message to screen
 echo "Setting Firewall rules"
@@ -63,7 +63,7 @@ sudo ufw default allow outgoing
 sudo ufw enable
 
 # prints message to screen
-echo "\n===========================================\n"
+printf "\n===========================================\n\n"
 
 # Prints message to screen
 echo "installation complete"
