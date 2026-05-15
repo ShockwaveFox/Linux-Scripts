@@ -27,6 +27,15 @@ sudo pacman -S --needed "${arch_packages[@]}"
 printf "\n===========================================\n\n"
 
 # Prints message to screen
+echo "Installing yay"
+
+# installs yay
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+
+# prints message to screen
+printf "\n===========================================\n\n"
+
+# Prints message to screen
 echo "Installing AUR packages"
 
 # installs AUR packages
