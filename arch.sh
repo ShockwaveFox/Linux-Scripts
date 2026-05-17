@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# one liner yay command - arch & aur packages
+yay steam discord goverlay mangohud lib32-mangohud gamemode lib32-gamemode vulkan-radeon lib32-vulkan-radeon vulkan-tools mesa pavucontrol heroic-games-launcher-bin protonplus apparmor ufw clamav eduke32
+
 # list of packages to install
 arch_packages=(steam discord goverlay mangohud lib32-mangohud gamemode lib32-gamemode vulkan-radeon lib32-vulkan-radeon vulkan-tools mesa pavucontrol)
 aur_packages=(heroic-games-launcher-bin protonplus)
