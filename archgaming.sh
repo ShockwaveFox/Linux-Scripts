@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# sets script to stop at any errors
+# sets script to stop at errors
 set -e
 
-# print to screen
+# print
 echo "Updating system"
 
 # update system
@@ -34,7 +34,7 @@ printf "\n===========================================\n\n"
 echo "Installing AUR packages"
 
 # install AUR packages
-yay heroic-games-launcher-bin protonplus eduke32
+yay -S heroic-games-launcher-bin protonplus eduke32
 
 printf "\n===========================================\n\n"
 
