@@ -1,0 +1,37 @@
+[/script/engine.renderersettings]
+niagara.CreateShadersOnLoad=1
+
+[SystemSettings]
+; --- Anti-aliasing / clarity ---
+r.TemporalAASamples=8
+r.TemporalAASharpness=1.0
+
+; --- Lighting & contrast ---
+r.AmbientOcclusionLevels=2
+r.AmbientOcclusionIntensity=0.6
+r.SSGI.Quality=2
+r.SSGI.Intensity=1.0
+
+; --- Reflections ---
+r.SSR.Quality=50
+r.SSR.HalfResSceneColor=1
+
+; --- Shadows ---
+r.Shadow.DistanceScale=0.7
+r.Shadow.CSM.TransitionScale=1.0
+
+; --- Volumetrics (fog, atmosphere) ---
+r.VolumetricFog=1
+r.VolumetricFog.GridPixelSize=8
+
+; --- View distance ---
+r.ViewDistanceScale=1.3
+
+; --- Texture quality ---
+r.MipMapLODBias=-1
+r.Streaming.FullyLoadUsedTextures=1
+
+[TextureStreaming]
+r.Streaming.LimitPoolSizeToVRAM=1
+PoolSizeVRAMPercentage=70
+``
