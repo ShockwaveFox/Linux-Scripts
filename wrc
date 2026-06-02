@@ -35,3 +35,45 @@ r.Streaming.FullyLoadUsedTextures=1
 r.Streaming.LimitPoolSizeToVRAM=1
 PoolSizeVRAMPercentage=70
 ``
+Chatgpt 90fps
+
+[/script/engine.renderersettings]
+niagara.CreateShadersOnLoad=1
+
+[SystemSettings]
+
+; --- Anti-aliasing ---
+r.TemporalAASamples=8
+r.TemporalAASharpness=1.0
+
+; --- Lighting ---
+r.AmbientOcclusionLevels=2
+r.AmbientOcclusionIntensity=0.6
+r.SSGI.Quality=2
+
+; --- Reflections (CPU-friendly reduction) ---
+r.SSR.Quality=30
+r.SSR.HalfResSceneColor=1
+
+; --- Shadows (important for CPU stability) ---
+r.Shadow.DistanceScale=0.6
+r.Shadow.CSM.TransitionScale=1.0
+
+; --- Volumetrics (big FPS spikes in rain) ---
+r.VolumetricFog=1
+r.VolumetricFog.GridPixelSize=8
+
+; --- View distance (key CPU limiter) ---
+r.ViewDistanceScale=1.1
+
+; --- Textures ---
+r.MipMapLODBias=-1
+r.Streaming.FullyLoadUsedTextures=1
+r.Streaming.UseAllMips=1
+
+; --- Filtering ---
+r.VT.MaxAnisotropy=16
+
+[TextureStreaming]
+r.Streaming.LimitPoolSizeToVRAM=1
+PoolSizeVRAMPercentage=70
